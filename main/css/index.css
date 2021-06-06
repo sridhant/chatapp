@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: fixed;
+}
+
+#banner {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#banner header {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#banner header nav {
+  background-color: #8838ff;
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#banner header nav .logo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner header nav .logo h1 {
+  font-size: 20px;
+  margin: auto;
+  text-transform: uppercase;
+  color: white;
+  margin: auto 0;
+  cursor: pointer;
+  font-family: "Satisfy", cursive;
+  font-weight: 900;
+}
+
+#banner header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  float: right;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#banner header nav ul a {
+  text-decoration: none;
+}
+
+#banner header nav ul a li {
+  list-style-type: none;
+  color: white;
+  font-family: "Fredoka One", cursive;
+}
+
+#banner header nav .burger {
+  height: 100%;
+  width: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+#banner header nav .burger img {
+  height: 50%;
+  margin: auto 0;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 755px) {
+  #banner {
+    overflow: hidden;
+  }
+  #banner header {
+    overflow-x: hidden;
+  }
+  #banner header nav .logo {
+    width: 50%;
+    float: left;
+    margin-left: -20%;
+    overflow-x: hidden;
+  }
+  #banner header nav ul {
+    position: absolute;
+    height: 92vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 9vh;
+    background-color: #8838ff;
+    left: 100vw;
+    overflow-x: hidden;
+  }
+  #banner header nav ul a {
+    overflow: hidden;
+  }
+  #banner header nav ul a li {
+    overflow: hidden;
+  }
+  #banner header nav .burger {
+    display: block;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+  }
+}
+/*# sourceMappingURL=index.css.map */
